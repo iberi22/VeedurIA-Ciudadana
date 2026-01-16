@@ -2,19 +2,19 @@
 title: "System Architecture"
 type: ARCHITECTURE
 id: "arch-system"
-created: 2025-12-01
-updated: 2025-12-31
+created: 2026-01-16
+updated: 2026-01-16
 agent: copilot
-model: gemini-3-pro
-requested_by: system
+model: gemini-3-flash
+requested_by: user
 summary: |
-  Critical architectural decisions and system design.
-keywords: [architecture, design, decisions, system]
-tags: ["#architecture", "#design", "#critical"]
-project: Git-Core-Protocol
+  Veeduría-IA.co architectural decisions and system design.
+keywords: [architecture, design, veeduria, secop, rust, socrata]
+tags: ["#architecture", "#design", "#critical", "#veeduria"]
+project: veedur-IA.co
 ---
 
-# 🏗️ Architecture
+# 🏗️ Architecture: Veeduría-IA.co
 
 ## 🚨 CRITICAL DECISIONS - READ FIRST
 
@@ -24,75 +24,52 @@ project: Git-Core-Protocol
 | # | Category | Decision | Rationale | ❌ NEVER Use |
 |---|----------|----------|-----------|--------------|
 | 1 | Hosting | GitHub Pages | Zero cost, Git-native | Vercel, Netlify, AWS |
-| 2 | Backend | Supabase | BaaS, realtime | Firebase, custom API |
-| 3 | State | GitHub Issues | Token economy | TODO.md, JIRA |
+| 2 | Backend | Rust (Action Runner) | Performance, safety, memory control | Python (Pandas), Node.js |
+| 3 | State | GitHub Issues | Protocol compliance & Task tracking | JIRA, Trello |
+| 4 | Data Lake | Hugging Face Hub | High volume storage for Parquet | GitHub LFS, AWS S3 |
 
-### How to use this table:
-1. **Before ANY implementation**, check if it conflicts with decisions above
-2. If issue mentions alternatives (e.g., "Vercel/GitHub Pages"), the decision above WINS
-3. When in doubt, ASK - don't assume
-
-**Related Documentation:**
-- `AGENTS.md` - Architecture Verification Rule
-- `.github/copilot-instructions.md` - Architecture First Rule
-
----
-
-## Stack
-- **Language:** Rust (gc-cli), PowerShell/Bash (legacy scripts)
-- **Framework:** Clap 4.5 (CLI), Tokio (async runtime), Octocrab (GitHub API)
-- **Database:** GitHub Issues (state management), None (local - stateless)
-- **Infrastructure:** GitHub Actions (CI/CD), GitHub Pages (hosting)
+### Stack
+- **Backend:** Rust (ETL, Analysis, IA)
+  - `polars`: High-performance data processing
+  - `candle`: In-process NLP inference
+  - `reqwest`: Socrata API integration
+- **Frontend:** Astro 5 + Svelte 5 (Runes)
+- **Data:** Parquet (storage), SODA/Socrata (source)
+- **Infrastructure:** GitHub Actions (Runner), HF Hub (Persistence)
 
 ## Key Decisions
 
-### Decision 1: [Title]
-- **Date:** YYYY-MM-DD
-- **Context:** Why this decision was needed
-- **Decision:** What was decided
-- **Consequences:** Impact and trade-offs
+### Decision 1: Rust over Python for ETL
+- **Date:** 2026-01-16
+- **Context:** GitHub Actions runners have limited RAM (7GB). Loading SECOP II datasets (millions of rows) in Python/Pandas causes OOM.
+- **Decision:** Use Rust with Polars (streaming/lazy API) and Candle (quantized BERT) to stay within runner limits.
+- **Consequences:** Blazing fast processing, low memory footprint, single binary deployment.
 
-### Decision 2: Telemetry Migration to Rust
-- **Date:** 2025-12-16
-- **Context:** Telemetry logic was isolated in PowerShell, causing fragmentation and platform dependencies.
-- **Decision:** Migrated client-side telemetry to `gc telemetry` command in Rust.
-- **Consequences:** Unified toolchain in `gc-cli`, removed PowerShell dependency for telemetry submission. Legacy script `send-telemetry.ps1` is deprecated.
-
-### Decision 3: CLI Unification
-- **Date:** 2025-12-16
-- **Context:** Multiple PowerShell scripts (`init_project.ps1`, `equip-agent.ps1`, `ai-report.ps1`) created maintenance overhead and platform lock-in.
-- **Decision:** Consolidated all core workflows into `gc-cli` Rust binary (`gc init`, `gc context`, `gc report`, `gc ci-detect`).
-- **Consequences:** All legacy PowerShell scripts are deprecated. Future development focuses solely on `gc-cli`.
+### Decision 2: Hugging Face as "Data Lake"
+- **Date:** 2026-01-16
+- **Context:** GitHub has strict size limits (~1GB/repo). SECOP II historical data exceeds this.
+- **Decision:** Store `.parquet` datasets in Hugging Face Hub. GitHub Actions download/upload only the diffs.
+- **Consequences:** Unlimited free storage for open datasets, decoupled from GitHub repo size.
 
 ## Project Structure
 ```
 /
-├── src/          # Source code
-├── tests/        # Test files
-├── docs/         # Documentation
-└── scripts/      # Utility scripts
+├── backend/      # Rust ETL & Analysis
+│   ├── src/obs/  # Observation modules (ingest, analyze)
+├── frontend/     # Astro + Svelte Portal
+├── .gitcore/     # Protocol metadata
+└── .github/      # Agents & Workflows
 ```
 
-## Dependencies
+## Dependencies (Core)
 | Package | Version | Purpose |
 |---------|---------|----------|
-| clap | 4.5.x | CLI argument parsing |
-| tokio | 1.48.x | Async runtime |
-| octocrab | 0.48.x | GitHub API client |
-| serde | 1.0.x | Serialization |
-| color-eyre | 0.6.x | Error handling |
-| walkdir | 2.x | Directory traversal |
-
-## Integration Points
-- [ ] External API 1
-- [ ] External API 2
-
-## Security Considerations
-- GitHub tokens stored in environment variables only
-- No secrets committed to repository
-- Pre-commit hooks prevent accidental credential exposure
-- CLI uses HTTPS for all API calls
+| polars | 0.45.x | Dataframes |
+| candle-core | 0.8.x | ML Inference |
+| astro | 5.x | Frontend framework |
+| svelte | 5.x | Component framework |
+| reqwest | 0.12.x | API Client |
 
 ---
-*Last updated by AI Agent: 2025-12-31*
+*Last updated by GitHub Copilot: 2026-01-16*
 
