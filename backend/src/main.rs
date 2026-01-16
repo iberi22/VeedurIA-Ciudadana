@@ -34,6 +34,25 @@ async fn main() -> Result<()> {
         // TODO: Transform to Parquet using Polars and upload
     }
 
+    // Initialize NLP engine
+    info!("Inicializando motor de IA (Candle + BERT)...");
+    let nlp_engine = obs::nlp::BertInference::new().await;
+
+    match nlp_engine {
+        Ok(engine) => {
+             if let Some(first_contract) = contracts.first() {
+                if let Some(obj) = &first_contract.objeto_del_contrato {
+                    info!("Generando embedding para: {:.50}...", obj);
+                    match engine.embed(obj) {
+                        Ok(emb) => info!("Embedding generado: shape {:?}", emb.shape()),
+                        Err(e) => warn!("Error al generar embedding: {}", e),
+                    }
+                }
+             }
+        },
+        Err(e) => warn!("Falló la carga del modelo NLP: {}. Continuando sin IA.", e),
+    }
+
     info!("Pipeline de ingestión completado.");
     Ok(())
 }
