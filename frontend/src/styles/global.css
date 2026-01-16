@@ -1,0 +1,54 @@
+/* Custom Fonts - Must be at the top */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-400: #38bdf8;
+  --color-brand-500: #0ea5e9;
+  --color-brand-600: #0284c7;
+  --color-brand-glow: #60a5fa;
+
+  --color-obsidian-800: #1e293b;
+  --color-obsidian-900: #0f172a;
+  --color-obsidian-950: #020617;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+
+  --background-image-glass-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+}
+
+@utility glass-panel {
+  @apply backdrop-blur-md bg-white/5 border border-white/10 shadow-xl;
+}
+
+@utility glass-button {
+  @apply px-6 py-2 rounded-full bg-brand-500/20 border border-brand-400/30 text-brand-400 hover:bg-brand-500/30 hover:border-brand-400/50 transition-all duration-300;
+}
+
+:root {
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(15, 23, 42, 0.6);
+}
+
+body {
+  @apply bg-obsidian-950 text-white font-sans antialiased;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(14, 165, 233, 0.15), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(99, 102, 241, 0.15), transparent 25%);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

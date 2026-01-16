@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Veeduría Ciudadana - Control Fiscal Democratizado" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="min-h-screen relative overflow-x-hidden selection:bg-brand-500/30">
+		<nav class="fixed top-0 w-full z-50 glass-panel border-b-0 rounded-none bg-obsidian-950/70 backdrop-blur-lg">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">
+					<div class="flex-shrink-0 flex items-center gap-3">
+						<!-- Logo Icon -->
+						<div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-400 to-indigo-500 flex items-center justify-center text-white font-bold shadow-lg shadow-brand-500/20">
+							V
+						</div>
+						<span class="font-bold text-xl tracking-tight text-white">Veeduría<span class="text-brand-400 font-light">Ciudadana</span></span>
+					</div>
+					<div class="hidden md:block">
+						<div class="ml-10 flex items-baseline space-x-4">
+							<a href="/" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Inicio</a>
+							<a href="/dashboard" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Dashboard</a>
+							<a href="/denunciar" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Denunciar</a>
+							<a href="/educacion" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Sobre Nosotros</a>
+						</div>
+					</div>
+					<div>
+						<button class="glass-button text-sm !py-1.5 !px-4">Acceso Oficiales</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="pt-16">
+			<slot />
+		</div>
+
+		<footer class="mt-20 border-t border-white/5 bg-obsidian-900/50 backdrop-blur-sm py-12">
+			<div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+				<p>© 2026 Veeduría Ciudadana. Un proyecto Open Source para Colombia.</p>
+			</div>
+		</footer>
+	</body>
+</html>

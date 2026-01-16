@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+target/
+dist/
+.astro/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+*.log
+npm-debug.log*
+
+# Rust
+Cargo.lock
+**/*.rs.bk
+
+# Data files (large datasets should be on Hugging Face)
+*.parquet
+*.csv
+!example_*.csv
+
+# Secrets
+*.pem
+*.key
+secrets/
