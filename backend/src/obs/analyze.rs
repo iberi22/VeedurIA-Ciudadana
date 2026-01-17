@@ -23,7 +23,7 @@ pub fn analyze_benford(values: &[f64]) -> BenfordResult {
 
     for &val in values {
         if let Some(digit) = first_digit(val) {
-            if digit >= 1 && digit <= 9 {
+            if (1..=9).contains(&digit) {
                 digit_counts[(digit - 1) as usize] += 1;
                 valid_count += 1;
             }
@@ -89,7 +89,7 @@ pub fn detect_single_bidders(df: &DataFrame) -> PolarsResult<DataFrame> {
 }
 
 /// Red Flag: Detect unusually short procurement timelines
-pub fn detect_short_timelines(df: &DataFrame, min_days: i64) -> PolarsResult<DataFrame> {
+pub fn detect_short_timelines(df: &DataFrame, _min_days: i64) -> PolarsResult<DataFrame> {
     // Filter contracts where (fecha_cierre - fecha_publicacion) < min_days
     df.clone().lazy().collect()
 }
@@ -101,7 +101,7 @@ pub fn check_benford_df(df: &DataFrame, column: &str) -> Option<BenfordResult> {
         .f64()
         .ok()?
         .into_iter()
-        .filter_map(|v| v)
+        .flatten()
         .collect();
 
     Some(analyze_benford(&values))
