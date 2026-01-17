@@ -1,0 +1,21 @@
+[package]
+name = "socrata-sdk"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust client for the Socrata Open Data API (SODA)"
+license = "MIT"
+authors = ["Iberi22 <contact@veeduria-ia.co>"]
+repository = "https://github.com/iberi22/veedur-IA.co"
+documentation = "https://docs.rs/socrata-sdk"
+homepage = "https://github.com/iberi22/veedur-IA.co"
+keywords = ["socrata", "soda", "opendata", "api-client", "govtech"]
+categories = ["api-bindings", "web-programming::http-client"]
+exclude = ["/.github", "/scripts"]
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+anyhow = "1.0" # Added for Result ease, but library should arguably use thiserror + custom Error
