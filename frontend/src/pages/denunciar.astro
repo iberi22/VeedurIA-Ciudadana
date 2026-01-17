@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import HistoryList from '../components/HistoryList.svelte';
+import ReportForm from '../components/ReportForm.svelte';
+import ReportPreview from '../components/ReportPreview.svelte';
 ---
 
 <Layout title="Denunciar | Veeduría Ciudadana">
@@ -78,5 +81,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 		</div>
+
+		<HistoryList client:load />
 	</div>
 </Layout>
