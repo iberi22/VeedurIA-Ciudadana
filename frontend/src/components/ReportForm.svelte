@@ -25,12 +25,27 @@
   <form class="space-y-6">
     <div>
       <label class="block text-sm font-medium text-gray-400 mb-2">ID del Contrato (SECOP)</label>
-      <input
-        type="text"
-        bind:value={reportState.contractId}
-        placeholder="Ej: CO1.PCCNTR.123456"
-        class="w-full bg-obsidian-900/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-500 transition-colors"
-      />
+      <div class="relative">
+        <input
+          type="text"
+          bind:value={reportState.contractId}
+          placeholder="Ej: CO1.PCCNTR.123456"
+          class="w-full bg-obsidian-900/50 border rounded-lg px-4 py-3 text-white focus:outline-none transition-colors {
+            reportState.contractId && !reportState.isValidContractId ? 'border-red-500 focus:border-red-500' :
+            reportState.contractId && reportState.isValidContractId ? 'border-green-500 focus:border-green-500' :
+            'border-white/10 focus:border-brand-500'
+          }"
+        />
+        {#if reportState.contractId}
+          <div class="absolute right-3 top-3 text-xs">
+            {#if reportState.isValidContractId}
+              <span class="text-green-500 font-bold">✓ Válido</span>
+            {:else}
+              <span class="text-red-500 font-bold">✕ Inválido</span>
+            {/if}
+          </div>
+        {/if}
+      </div>
     </div>
 
     <div>
