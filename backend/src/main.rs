@@ -22,17 +22,6 @@ async fn main() -> Result<()> {
     // Run data ingestion
     let contracts = obs::ingest::run(&socrata_token).await?;
 
-    let hf_token = env::var("HF_TOKEN").unwrap_or_default();
-    let hf_repo = "iberi22/veeduria-secop-ii";
-
-    if hf_token.is_empty() {
-        warn!("HF_TOKEN no configurado. Saltando sincronización con Data Lake.");
-    } else {
-        info!("Sincronizando {} registros con {}...", contracts.len(), hf_repo);
-        let _lake = obs::hf_hub::HFDataLake::new(hf_repo, &hf_token);
-
-        // TODO: Transform to Parquet using Polars and upload
-    }
 
     // Initialize NLP engine
     info!("Inicializando motor de IA (Candle + BERT)...");
@@ -59,6 +48,24 @@ async fn main() -> Result<()> {
 
     let json_data = serde_json::to_string_pretty(&contracts)?;
     tokio::fs::write(output_path, json_data).await?;
+
+    // Hugging Face Sync (After file is written)
+    let hf_token = env::var("HF_TOKEN").unwrap_or_default();
+    let hf_repo = "iberi22/veeduria-secop-ii";
+
+    if hf_token.is_empty() {
+        warn!("HF_TOKEN no configurado. Saltando sincronización con Data Lake.");
+    } else {
+        info!("Sincronizando con HF Hub: {}...", hf_repo);
+        let lake = obs::hf_hub::HFDataLake::new(hf_repo, &hf_token);
+        let report_path_buf = std::path::PathBuf::from(output_path);
+
+        // Upload with a timestamped name or daily_report.json (overwriting daily, maybe archiving with date)
+        // For now, let's keep it simple: daily_report.json
+        if let Err(e) = lake.upload_file(report_path_buf, "daily_report.json").await {
+             warn!("Error al subir archivo a HF: {}", e);
+        }
+    }
 
     info!("Pipeline de ingestión completado.");
     Ok(())
