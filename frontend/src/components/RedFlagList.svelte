@@ -6,9 +6,12 @@
   let loading = $state(true);
   let error = $state(null);
 
+  // Get base URL for GitHub Pages compatibility
+  const baseUrl = import.meta.env.BASE_URL || '/';
+
   onMount(async () => {
     try {
-      const res = await fetch('/daily_report.json');
+      const res = await fetch(`${baseUrl}daily_report.json`);
       if (!res.ok) throw new Error('No se pudo cargar el reporte diario.');
       contracts = await res.json();
     } catch (e) {

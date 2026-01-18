@@ -1,13 +1,16 @@
 <script lang="ts">
   let { contrato } = $props();
 
+  // Get base URL for GitHub Pages compatibility
+  const baseUrl = import.meta.env.BASE_URL || '/';
+
   function navigateToReport() {
     const params = new URLSearchParams({
       id: contrato.id_contrato,
       entity: contrato.nombre_entidad,
       type: contrato.tipo_de_contrato
     });
-    window.location.href = `/veedur-IA.co/denunciar?${params.toString()}`;
+    window.location.href = `${baseUrl}denunciar?${params.toString()}`;
   }
 
   const valor = contrato.valor_del_contrato || "$0";

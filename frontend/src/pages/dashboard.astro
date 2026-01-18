@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RedFlagList from '../components/RedFlagList.svelte';
 ---
 
 <Layout title="Dashboard | Veeduría Ciudadana">
@@ -44,55 +45,8 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 
-			<!-- Red Flags List -->
-			<div class="glass-panel rounded-2xl p-6 h-[500px] overflow-y-auto">
-				<h3 class="text-xl font-semibold mb-6 text-white sticky top-0 bg-obsidian-950/80 backdrop-blur-md py-2 -mx-2 px-2 z-10">
-					Top Red Flags
-				</h3>
-				<div class="space-y-4">
-					<!-- Card 1 -->
-					<div class="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-red-500/30 transition-colors cursor-pointer group">
-						<div class="flex justify-between items-start mb-2">
-							<span class="px-2 py-1 rounded text-xs font-bold bg-red-500/20 text-red-400 border border-red-500/20">ALTO RIESGO</span>
-							<span class="text-gray-500 text-xs">Hace 2h</span>
-						</div>
-						<h4 class="text-white font-medium line-clamp-2 group-hover:text-brand-400 transition-colors">Suministro de alimentación escolar PAE - Zona Norte</h4>
-						<p class="text-gray-400 text-sm mt-2">Alcaldía de Uribia</p>
-						<div class="mt-3 flex items-center justify-between text-xs text-gray-500 border-t border-white/5 pt-3">
-							<span>$12.500.000.000</span>
-							<span class="text-red-300">Único Proponente</span>
-						</div>
-					</div>
-
-					<!-- Card 2 -->
-					<div class="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-orange-500/30 transition-colors cursor-pointer group">
-						<div class="flex justify-between items-start mb-2">
-							<span class="px-2 py-1 rounded text-xs font-bold bg-orange-500/20 text-orange-400 border border-orange-500/20">MEDIO</span>
-							<span class="text-gray-500 text-xs">Hace 5h</span>
-						</div>
-						<h4 class="text-white font-medium line-clamp-2 group-hover:text-brand-400 transition-colors">Construcción parque recreativo corregimiento El Salado</h4>
-						<p class="text-gray-400 text-sm mt-2">Gobernación de Bolívar</p>
-						<div class="mt-3 flex items-center justify-between text-xs text-gray-500 border-t border-white/5 pt-3">
-							<span>$450.000.000</span>
-							<span class="text-orange-300">Tiempos Cortos</span>
-						</div>
-					</div>
-
-					<!-- Card 3 -->
-					<div class="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-yellow-500/30 transition-colors cursor-pointer group">
-						<div class="flex justify-between items-start mb-2">
-							<span class="px-2 py-1 rounded text-xs font-bold bg-yellow-500/20 text-yellow-400 border border-yellow-500/20">BAJO</span>
-							<span class="text-gray-500 text-xs">Ayer</span>
-						</div>
-						<h4 class="text-white font-medium line-clamp-2 group-hover:text-brand-400 transition-colors">Adquisición dotación oficina secretaría general</h4>
-						<p class="text-gray-400 text-sm mt-2">Hospital San Rafael</p>
-						<div class="mt-3 flex items-center justify-between text-xs text-gray-500 border-t border-white/5 pt-3">
-							<span>$45.000.000</span>
-							<span class="text-yellow-300">Benford Atípico</span>
-						</div>
-					</div>
-				</div>
-			</div>
+			<!-- Dynamic Red Flags List - Loads from daily_report.json -->
+			<RedFlagList client:load />
 		</div>
 
 		<!-- Charts Section -->
