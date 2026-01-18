@@ -17,8 +17,13 @@
   const entidad = contrato.nombre_entidad || "Entidad Desconocida";
   const objeto = contrato.objeto_del_contrato || "Sin descripción";
   const contratista = contrato.nombre_contratista || "Por definir";
-  // Mock risk logic for now based on some properties or random to demonstrate
-  const isHighRisk = valor.length > 10; // Placeholder logic
+  const riskLevel = contrato.risk_level || 'Bajo';
+
+  function getRiskColor(level: string) {
+      if (level === 'Alto') return 'bg-red-500/20 text-red-400 border-red-500/20';
+      if (level === 'Medio') return 'bg-orange-500/20 text-orange-400 border-orange-500/20';
+      return 'bg-green-500/20 text-green-400 border-green-500/20';
+  }
 </script>
 
 <div
@@ -26,12 +31,10 @@
   class="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-brand-500/30 transition-all cursor-pointer group active:scale-[0.98]"
 >
   <div class="flex justify-between items-start mb-2">
-    {#if isHighRisk}
-      <span class="px-2 py-1 rounded text-xs font-bold bg-red-500/20 text-red-400 border border-red-500/20">ALTO RIESGO</span>
-    {:else}
-      <span class="px-2 py-1 rounded text-xs font-bold bg-brand-500/20 text-brand-400 border border-brand-500/20">NORMAL</span>
-    {/if}
-    <span class="text-gray-500 text-xs">{contrato.fecha_de_firma || 'Reciente'}</span>
+    <span class={`px-2 py-1 rounded text-xs font-bold border ${getRiskColor(riskLevel)}`}>
+        {riskLevel.toUpperCase()}
+    </span>
+    <span class="text-gray-500 text-xs">{contrato.fecha_de_firma ? contrato.fecha_de_firma.split('T')[0] : 'Reciente'}</span>
   </div>
 
   <h4 class="text-white font-medium line-clamp-2 group-hover:text-brand-400 transition-colors">

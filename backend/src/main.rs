@@ -20,7 +20,7 @@ async fn main() -> Result<()> {
     info!("Iniciando ingestión de datos desde SECOP II...");
 
     // Run data ingestion
-    let contracts = obs::ingest::run(&socrata_token).await?;
+    let mut contracts = obs::ingest::run(&socrata_token).await?;
 
 
     // Initialize NLP engine
@@ -46,37 +46,65 @@ async fn main() -> Result<()> {
     let output_path = "../frontend/public/daily_report.json";
     info!("Guardando reporte en: {}", output_path);
 
-    let json_data = serde_json::to_string_pretty(&contracts)?;
-    tokio::fs::write(output_path, json_data).await?;
-
-    // Generate aggregated statistics
+    // Generate aggregated statistics & enrich contracts
     let mut total_value = 0.0;
     let mut red_flags_count = 0;
     let mut undefined_object_count = 0;
     let mut zero_value_count = 0;
 
-    for contract in &contracts {
+    // Histogram buckets: <10M, 10M-50M, 50M-100M, 100M-500M, >500M
+    let mut histogram = [0u32; 5];
+
+    for contract in &mut contracts {
+        let mut flags = Vec::new();
+        let mut val = 0.0;
+
         // Parse value
         if let Some(val_str) = &contract.valor_del_contrato {
-             if let Ok(val) = val_str.parse::<f64>() {
+             if let Ok(v) = val_str.parse::<f64>() {
+                 val = v;
                  total_value += val;
+
+                 // Zero value check
                  if val == 0.0 {
                      zero_value_count += 1;
+                     flags.push("Valor Cero".to_string());
                  }
+
+                 // Histogram buckets
+                 if val < 10_000_000.0 { histogram[0] += 1; }
+                 else if val < 50_000_000.0 { histogram[1] += 1; }
+                 else if val < 100_000_000.0 { histogram[2] += 1; }
+                 else if val < 500_000_000.0 { histogram[3] += 1; }
+                 else { histogram[4] += 1; }
              }
         }
 
         // Check object
         if let Some(obj) = &contract.objeto_del_contrato {
-            if obj == "No definido" || obj == "Objeto a contratar" {
+            let obj_lower = obj.to_lowercase();
+            if obj_lower == "no definido" || obj_lower.contains("objeto a contratar") {
                 undefined_object_count += 1;
+                flags.push("Objeto Indefinido".to_string());
             }
         } else {
              undefined_object_count += 1;
+             flags.push("Objeto Faltante".to_string());
         }
+
+        // Set Risk Level
+        let level = if flags.len() >= 2 {
+            "Alto"
+        } else if !flags.is_empty() {
+            "Medio"
+        } else {
+            "Bajo"
+        };
+
+        contract.risk_level = Some(level.to_string());
+        contract.red_flags = Some(flags);
     }
 
-    // Simple heuristic for total red flags
     red_flags_count = zero_value_count + undefined_object_count;
 
     let stats = serde_json::json!({
@@ -85,8 +113,18 @@ async fn main() -> Result<()> {
         "red_flags_count": red_flags_count,
         "zero_value_count": zero_value_count,
         "undefined_object_count": undefined_object_count,
+        "histogram": {
+            "0-10M": histogram[0],
+            "10M-50M": histogram[1],
+            "50M-100M": histogram[2],
+            "100M-500M": histogram[3],
+            ">500M": histogram[4]
+        },
         "last_updated": chrono::Utc::now().to_rfc3339()
     });
+
+    let json_data = serde_json::to_string_pretty(&contracts)?;
+    tokio::fs::write(output_path, json_data).await?;
 
     let stats_path = "../frontend/public/stats.json";
     info!("Guardando estadísticas en: {}", stats_path);

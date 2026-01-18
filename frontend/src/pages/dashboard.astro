@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import RedFlagList from '../components/RedFlagList.svelte';
 import DashboardStats from '../components/DashboardStats.svelte';
+import DashboardCharts from '../components/DashboardCharts.svelte';
 ---
 
 <Layout title="Dashboard | Veeduría Ciudadana">
@@ -40,56 +41,6 @@ import DashboardStats from '../components/DashboardStats.svelte';
 		</div>
 
 		<!-- Charts Section -->
-		<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-			<div class="glass-panel p-6 rounded-2xl">
-				<h3 class="text-lg font-semibold text-white mb-4">Tendencia de Irregularidades</h3>
-				<div class="h-64 flex items-end gap-2 justify-between px-4 pb-4 border-b border-white/5 relative">
-					<!-- Mock Bars -->
-					<div class="w-full bg-brand-500/20 rounded-t hover:bg-brand-500/40 transition-all h-[30%] relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/80 px-2 py-1 rounded text-xs hidden group-hover:block">12</div></div>
-					<div class="w-full bg-brand-500/20 rounded-t hover:bg-brand-500/40 transition-all h-[45%] relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/80 px-2 py-1 rounded text-xs hidden group-hover:block">18</div></div>
-					<div class="w-full bg-brand-500/20 rounded-t hover:bg-brand-500/40 transition-all h-[25%] relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/80 px-2 py-1 rounded text-xs hidden group-hover:block">10</div></div>
-					<div class="w-full bg-brand-500/20 rounded-t hover:bg-brand-500/40 transition-all h-[60%] relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/80 px-2 py-1 rounded text-xs hidden group-hover:block">24</div></div>
-					<div class="w-full bg-brand-500/20 rounded-t hover:bg-brand-500/40 transition-all h-[40%] relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/80 px-2 py-1 rounded text-xs hidden group-hover:block">16</div></div>
-					<div class="w-full bg-brand-500/20 rounded-t hover:bg-brand-500/40 transition-all h-[75%] relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/80 px-2 py-1 rounded text-xs hidden group-hover:block">30</div></div>
-					<div class="w-full bg-brand-500/20 rounded-t hover:bg-brand-500/40 transition-all h-[55%] relative group"><div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/80 px-2 py-1 rounded text-xs hidden group-hover:block">22</div></div>
-				</div>
-				<div class="flex justify-between text-xs text-gray-500 mt-2">
-					<span>Lun</span><span>Mar</span><span>Mie</span><span>Jue</span><span>Vie</span><span>Sab</span><span>Dom</span>
-				</div>
-			</div>
-
-			<div class="glass-panel p-6 rounded-2xl">
-				<h3 class="text-lg font-semibold text-white mb-4">Tipos de Alerta</h3>
-				<div class="space-y-4">
-					<div class="space-y-1">
-						<div class="flex justify-between text-sm">
-							<span class="text-gray-300">Licitante Único</span>
-							<span class="text-white font-bold">45%</span>
-						</div>
-						<div class="w-full bg-white/5 rounded-full h-2">
-							<div class="bg-red-500 h-2 rounded-full" style="width: 45%"></div>
-						</div>
-					</div>
-					<div class="space-y-1">
-						<div class="flex justify-between text-sm">
-							<span class="text-gray-300">Sobrecostos (Benford)</span>
-							<span class="text-white font-bold">30%</span>
-						</div>
-						<div class="w-full bg-white/5 rounded-full h-2">
-							<div class="bg-orange-500 h-2 rounded-full" style="width: 30%"></div>
-						</div>
-					</div>
-					<div class="space-y-1">
-						<div class="flex justify-between text-sm">
-							<span class="text-gray-300">Pliegos Sastre (NLP)</span>
-							<span class="text-white font-bold">25%</span>
-						</div>
-						<div class="w-full bg-white/5 rounded-full h-2">
-							<div class="bg-brand-500 h-2 rounded-full" style="width: 25%"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+			<DashboardCharts client:load />
 	</div>
 </Layout>

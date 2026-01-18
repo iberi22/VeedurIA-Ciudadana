@@ -37,6 +37,10 @@ pub struct ContratoSecop {
     pub fecha_de_inicio_del_contrato: Option<String>,
     #[serde(default)]
     pub duracion: Option<String>,
+    #[serde(default)]
+    pub risk_level: Option<String>,
+    #[serde(default)]
+    pub red_flags: Option<Vec<String>>,
 }
 
 pub struct SocrataClient {
