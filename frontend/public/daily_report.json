@@ -13,7 +13,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.8350414",
@@ -29,7 +34,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.2024700",
@@ -45,7 +52,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.5058015",
@@ -61,7 +70,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.6245342",
@@ -77,7 +91,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.7253452",
@@ -93,7 +109,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.2808264",
@@ -109,7 +127,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.243576",
@@ -125,7 +148,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": "2017-12-05T00:00:00.000",
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.6308546",
@@ -141,7 +166,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.5150269",
@@ -157,7 +187,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.6484498",
@@ -173,7 +208,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.401829",
@@ -189,7 +229,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": "2018-02-01T00:00:00.000",
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.2054930",
@@ -205,7 +247,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.6857413",
@@ -221,7 +265,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.7995019",
@@ -237,7 +286,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.6875456",
@@ -253,7 +306,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.361535",
@@ -269,7 +327,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": "2018-03-02T00:00:00.000",
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.7277078",
@@ -285,7 +345,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.6076590",
@@ -301,7 +363,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.8845860",
@@ -317,7 +381,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.2093197",
@@ -333,7 +399,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.545684",
@@ -349,7 +417,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": "2018-08-30T00:00:00.000",
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.520104",
@@ -365,7 +435,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3446301",
@@ -381,7 +455,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.8813903",
@@ -397,7 +473,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.4487278",
@@ -413,7 +491,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.2207672",
@@ -429,7 +509,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.1738512",
@@ -445,7 +527,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.7277355",
@@ -461,7 +545,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.2632085",
@@ -477,7 +563,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.5534048",
@@ -493,7 +584,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3524908",
@@ -509,7 +605,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.1717828",
@@ -525,7 +626,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.698546",
@@ -541,7 +644,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": "2018-10-16T00:00:00.000",
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Valor Cero"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.5309435",
@@ -557,7 +664,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.5210625",
@@ -573,7 +682,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.210608",
@@ -589,7 +700,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3976096",
@@ -605,7 +720,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.1607071",
@@ -621,7 +738,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.6049242",
@@ -637,7 +759,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3421786",
@@ -653,7 +780,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.7876018",
@@ -669,7 +801,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.5110554",
@@ -685,7 +819,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.4690202",
@@ -701,7 +839,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.6384848",
@@ -717,7 +857,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.7090622",
@@ -733,7 +878,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.5870140",
@@ -749,7 +896,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.4107445",
@@ -765,7 +914,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3318940",
@@ -781,7 +934,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.5027713",
@@ -797,7 +955,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.2835082",
@@ -813,7 +973,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.1341454",
@@ -829,7 +991,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": "2020-02-04T00:00:00.000",
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.4166835",
@@ -845,7 +1009,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.8847643",
@@ -861,7 +1029,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.5426519",
@@ -877,7 +1047,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.1010730",
@@ -893,7 +1065,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": "2019-07-02T00:00:00.000",
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.65603",
@@ -909,7 +1083,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": "2016-09-08T00:00:00.000",
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.1942213",
@@ -925,7 +1101,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.6845025",
@@ -941,7 +1119,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3096601",
@@ -957,7 +1140,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.5515596",
@@ -973,7 +1160,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.6882867",
@@ -989,7 +1178,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.7735642",
@@ -1005,7 +1199,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.1789356",
@@ -1021,7 +1217,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.7545092",
@@ -1037,7 +1235,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Valor Cero"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.6049153",
@@ -1053,7 +1255,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3294502",
@@ -1069,7 +1276,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3355717",
@@ -1085,7 +1297,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.2463149",
@@ -1101,7 +1318,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.5361294",
@@ -1117,7 +1339,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.6586522",
@@ -1133,7 +1357,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.6374014",
@@ -1149,7 +1378,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.8149224",
@@ -1165,7 +1399,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.8831578",
@@ -1181,7 +1417,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.8820917",
@@ -1197,7 +1435,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.5248429",
@@ -1213,7 +1453,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Valor Cero"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.8821042",
@@ -1229,7 +1473,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.7153842",
@@ -1245,7 +1491,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.4773669",
@@ -1261,7 +1511,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.7175631",
@@ -1277,7 +1529,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.6870687",
@@ -1293,7 +1549,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.346160",
@@ -1309,7 +1570,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": "2018-01-24T00:00:00.000",
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.6606587",
@@ -1325,7 +1588,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.2090827",
@@ -1341,7 +1606,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.8837876",
@@ -1357,7 +1624,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.661231",
@@ -1373,7 +1642,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3511151",
@@ -1389,7 +1663,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.7290606",
@@ -1405,7 +1684,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.3396950",
@@ -1421,7 +1702,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.4019103",
@@ -1437,7 +1723,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.455404",
@@ -1453,7 +1741,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Medio",
+    "red_flags": [
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.3215873",
@@ -1469,7 +1761,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.306165",
@@ -1485,7 +1782,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.5780503",
@@ -1501,7 +1803,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.1557367",
@@ -1517,7 +1821,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.4850428",
@@ -1533,7 +1839,9 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Bajo",
+    "red_flags": []
   },
   {
     "id_contrato": "CO1.PCCNTR.7936611",
@@ -1549,7 +1857,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.4777193",
@@ -1565,7 +1878,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.7570450",
@@ -1581,7 +1899,12 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   },
   {
     "id_contrato": "CO1.PCCNTR.7057479",
@@ -1597,6 +1920,11 @@
     "nit_contratista": null,
     "fecha_de_firma": null,
     "fecha_de_inicio_del_contrato": null,
-    "duracion": null
+    "duracion": null,
+    "risk_level": "Alto",
+    "red_flags": [
+      "Valor Cero",
+      "Objeto Indefinido"
+    ]
   }
 ]
